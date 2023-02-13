@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -44,7 +45,44 @@
       <section class="card" id="css-section">
           <h2>CSS</h2>
           <ul>
-              <li>Enter your CSS notes here</li>
+              <li>Cascading Style Sheets (CSS): A programming language used by developers to define how webpage content is presented to users.</li>
+              <ul>
+                <li>CSS defines the colors, aesthetics, visual layout, and organization. We use CSS to define style rules for specific elements of an HTML page and format them using a wide range of style options.</li>
+              </ul>
+              <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+              <ul>
+                <li>Inline CSS: When a developer wants to style an element directly in the HTML file. Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only. They’re useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+              </ul>
+              <li>A selector defines the element or attributes to which the rules, or declarations will apply.</li>
+              <li>Declarations: Contains 2 important componenents:</li>
+              <ul>
+              <OL TYPE="i">
+                <li>The CSS property we want to apply </li>
+                <li>The value of the property</li>
+              </OL> </ul>
+              <li>Margin and Padding Property:</li>
+              <ul>
+                <li>The margin property acts much like a margin in a word processing document. A margin property indicates how much space we want around the outside of an element. The margin is not visible on the page; it merely adds a buffer. When we set the margin property to 0, we are indicating that we want NO extra space around the element.</li>
+                <li>The padding property is often confused with margin, but it is not the same thing. The padding property adds space around the content inside an element. When you increase padding, you are actually making the entire element bigger! That is because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element.</li>
+                <li>It is important to know that every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content. This is sometimes referred to as the CSS box model.</li>
+              </ul>
+              <li>Sometimes, we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *.</li>
+              <li>Selectors:</li>
+              <ul>
+                <li>Header</li>
+                <li>Footer</li>
+                <li>Img</li>
+              </ul>
+              <li>Rules assignment:</li>
+              <ul>
+                <li>text-align: A positioning property. One way to center a title or heading on a webpage</li>
+                <li>Display</li>
+              </ul>
+              <li>Designating a class attribute as the selector:</li>
+              <ul>
+                <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+              <li>A period preceding  the class (ex: .card) designates this as a class selector. Any HTML element assigned to the class will gain these property assignments from the CSS</li>
+              </ul>
           </ul>
       </section>
    
@@ -53,16 +91,36 @@
           <ul>
               <li>Github: Web interface for Git, a version control software that allows multiple people to make separate changes to a program at the same time without getting in the way of each other.</li>
               <li>Terminologies:</li>
+              <dt>Repository</dt>
               <ul>
-                  <li>Repository: Every project on Github is called a repository. A folder for your project that contains all of the files and their revision history</li>
-                  <li>Branch: A Workspace where you can make changes that don’t affect the live site.Create a new branch for your work, and name it to best describe the work  </li>
-                  <li>Markdown (.md): The way the content files are formatted in Github. A way to write for the web using plain text; easily converts to HTML</li>
-                  <li>Commit Changes: Saving a new version of a file you are working on. Adds change to your branch</li>
-                  <li>Pull Request (PR): Asking for changes on a branch to merge into another branch. A way to discuss and review your work with others</li>
-                  <li>Merge: When a Pull Request is approved, changes are "pulled in" or merged into the main branch. Changes are published or deployed to the live site once this happens</li>
-                  <li>Issue: Way to report new tasks or content fixes. Track progress on project board, basically a to do list. Open an issue for a new task and close once done!</li>
+              <li>Every project on Github is called a repository. A folder for your project that contains all of the files and their revision history</li>
               </ul>
-
+              <dt>Branch</dt> 
+              <ul>
+                <li>A Workspace where you can make changes that don’t affect the live site.Create a new branch for your work, and name it to best describe the work</li>
+              </ul> 
+              <dt>Markdown (.md)</dt>
+              <ul>
+                <li>The way the content files are formatted in Github. A way to write for the web using plain text; easily converts to HTML</li>
+              </ul>
+              <dt>Commit Changes</dt>
+              <ul>
+                <li>Commit Changes: Saving a new version of a file you are working on. Adds change to your branch</li>
+              </ul>
+              <dt>Pull Request (PR)</dt>
+              <ul>
+                <li>Pull Request (PR): Asking for changes on a branch to merge into another branch. A way to discuss and review your work with others</li>
+              </ul>
+              <dt>Merge</dt>
+              <ul>
+                <li>Merge: When a Pull Request is approved, changes are "pulled in" or merged into the main branch. Changes are published or deployed to the live site once this happens</li>
+              </ul>
+              <dt>Issue</dt>
+              <ul>
+                <li>Way to report new tasks or content fixes. Track progress on project board, basically a to do list. Open an issue for a new task and close once done!</li>
+              </ul>
+              </ul>
+              <ul>
               <li>Git Commands:</li>
               <ul>
                   <li>git status: checks out what branch we are currently on</li>
@@ -114,11 +172,12 @@
                 <li>In order to use the for loop, we need the variable's index and the array's length. The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array. We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
                 </ul>
                 <li>Contains three important statements:</li>
+                <ul>
                 <OL TYPE="i">
                 <li>The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 </li>
                 <li>The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running.</li>
                 <Li>The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1.</Li>
-              </ol>
+              </ol> </ul>
               <li>Function: Simply a set of instructions that tells the computer how to perform a certain task. Functions do not automatically execute when the JavaScript file is run. </li>
               <ul>
                 <li>You must call a function by name in order to execute it. </li>
@@ -130,6 +189,7 @@
 
     <footer>
       <p>I can code!</p>
+      <script src="./assets/script.js"></script>
     </footer>
   </body>
 </html>
